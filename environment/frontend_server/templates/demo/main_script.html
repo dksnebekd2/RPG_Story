@@ -345,7 +345,7 @@
 	  player.body.setVelocity(0);
 	//   npc.body.setVelocity(0), player.body.setVelocity(0)
 
-	  // *-camera_speed 를 플레이어 이동 기능으로 변경. (수정사항)
+	  // *Change camera_speed to the player movement function.
 	  if (cursors.left.isDown) {
 	    player.body.setVelocityX(-speed);
 	  } 
@@ -359,6 +359,9 @@
 	    player.body.setVelocityY(speed);
 	  }
 
+	  // When moving the player, NPC's must remain stationary.
+	  // If NPCs move along with the player’s controls, such issues may arise
+	  // due to overlapping logic or shared object references.
 	  // *Normalize and scale the velocity so that playr can't move faster along a diagonal
 	  player.body.velocity.normalize().scale(speed);
 
@@ -506,40 +509,3 @@
 	var play_button=document.getElementById("play_button");
 	var pause_button=document.getElementById("pause_button");
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
