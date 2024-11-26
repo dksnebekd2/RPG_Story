@@ -202,12 +202,7 @@
 	  //        in Tiled. Take a look at this guy's tutorial: 
 	  //        https://www.youtube.com/watch?v=MR2CvWxOEsw&ab_channel=MattWilber
 	  collisionsLayer.setCollisionByProperty({ collide: true });
-	  // By default, everything gets depth sorted on the screen in the order we 
-	  // created things. Here, we want the "Above Player" layer to sit on top of 
-	  // the player, so we explicitly give it a depth. Higher depths will sit on 
-	  // top of lower depth objects.
-	  // Collisions layer should get a negative depth since we do not want to see
-	  // it. 
+	
 	  collisionsLayer.setDepth(-1);
 	  foregroundLayer.setDepth(2);
 
@@ -240,7 +235,7 @@
 	  camera.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
 	  cursors = this.input.keyboard.createCursorKeys();
 
-	  // *** SET UP PERSONAS *** 
+	  // *** SET UP NPCS(PERSONAS) *** 
 	  // We start by creating the game sprite objects. 
 	  for (let i=0; i<Object.keys(spawn_tile_loc).length; i++) { 
 	    let persona_name = Object.keys(spawn_tile_loc)[i];
@@ -257,8 +252,8 @@
 	    // Here, we are creating the persona and its pronunciatio sprites.
 	    personas[persona_name] = new_sprite;
 	    speech_bubbles[persona_name] = this.add.image(new_sprite.body.x - 0, 
-	    																						  new_sprite.body.y - 30,
-	    																						  'speech_bubble').setDepth(3);
+	    				new_sprite.body.y - 30,
+	    				'speech_bubble').setDepth(3);
       speech_bubbles[persona_name].displayWidth = 130;
       speech_bubbles[persona_name].displayHeight = 58;
 
