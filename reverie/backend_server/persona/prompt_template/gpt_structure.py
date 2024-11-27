@@ -27,7 +27,7 @@ def ChatGPT_single_request(prompt):
 
 
 # ============================================================================
-# #####################[SECTION 1: CHATGPT-3 STRUCTURE] ######################
+# #####################[SECTION 1: CHATgpt-3.5-turbo STRUCTURE] ######################
 # ============================================================================
 
 def GPT4_request(prompt): 
@@ -46,7 +46,7 @@ def GPT4_request(prompt):
 
   try: 
     completion = openai.ChatCompletion.create(
-    model="gpt-4", 
+    model="gpt-3.5-turbo", 
     messages=[{"role": "user", "content": prompt}]
     )
     return completion["choices"][0]["message"]["content"]
@@ -70,7 +70,8 @@ def ChatGPT_request(prompt):
   """
   # temp_sleep()
   try: 
-    completion = openai.ChatCompletion.create(
+    # openai.ChatCompletion.create -> openai.chat.completions.create
+    completion = openai.chat.completions.create(
     model="gpt-3.5-turbo", 
     messages=[{"role": "user", "content": prompt}]
     )
@@ -282,7 +283,7 @@ def get_embedding(text, model="text-embedding-ada-002"):
 
 
 if __name__ == '__main__':
-  gpt_parameter = {"engine": "text-davinci-003", "max_tokens": 50, 
+  gpt_parameter = {"engine": "gpt-3.5-turbo", "max_tokens": 50, 
                    "temperature": 0, "top_p": 1, "stream": False,
                    "frequency_penalty": 0, "presence_penalty": 0, 
                    "stop": ['"']}
@@ -309,23 +310,3 @@ if __name__ == '__main__':
                                  True)
 
   print (output)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
