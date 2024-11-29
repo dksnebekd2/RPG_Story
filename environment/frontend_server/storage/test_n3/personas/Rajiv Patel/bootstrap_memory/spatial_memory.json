@@ -1,86 +1,107 @@
 {
-  "the Ville": {
-    "Oak Hill College": {
-      "hallway": [],
-      "library": [
-        "library sofa",
-        "library table",
+  "HighSchool": {
+    "school": {
+      "hallway": [
+        "vending machine",
+        "school new poster"
+      ],
+      "science lab": [
+        "science lab chair"
+      ],
+      "lounge": [
+        "sofa"
+      ],
+      "student council room": [
+        "student council room debate presenter",
+        "student council room chair",
         "bookshelf"
       ],
-      "classroom": [
-        "blackboard",
-        "classroom podium",
-        "classroom student seating"
-      ]
-    },
-    "Dorm for Oak Hill College": {
-      "garden": [
-        "dorm garden"
+      "teacher's office": [
+        "teacher's chair"
       ],
-      "Maria Lopez's room": [
-        "closet",
-        "desk",
-        "bed",
-        "computer",
-        "blackboard"
+      "home base": [
+        "home base"
       ],
-      "woman's bathroom": [
+      "third-grade classroom": [
+        "classroom chair"
+      ],
+      "second-grade classroom": [
+        "classroom chair"
+      ],
+      "first-grade classroom": [
+        "classroom chair"
+      ],
+      "lobby": [
+        "shoe rack"
+      ],
+      "cafeteria": [
+        "Cafeteria chair"
+      ],
+      "library": [
+        "librarian counter",
+        "library chair",
+        "bookshelf"
+      ],
+      "multipurpose room": [
+        "multipurpose room chair",
+        "multipurpose room debate presenter"
+      ],
+      "men's restroom": [
         "toilet",
-        "shower",
         "bathroom sink"
       ],
-      "common room": [
-        "common room sofa",
-        "pool table",
-        "common room table"
+      "women's restroom": [
+        "toilet",
+        "bathroom sink"
+      ]
+    },
+    "dormitory": {
+      "men's dormitory hallway": [
+        "pantry",
+        "refrigerator",
+        "storage cabinet"
       ],
-      "man's bathroom": [
-        "shower",
+      "men's study room": [
+        "dormitory study chair",
+        "bookshelf"
+      ],
+      "men's shower room": [
+        "showerhead",
         "bathroom sink",
-        "toilet"
-      ]
-    },
-    "The Willows Market and Pharmacy": {
-      "store": [
-        "grocery store shelf",
-        "behind the grocery counter",
-        "grocery store counter",
-        "pharmacy store shelf",
-        "pharmacy store counter",
-        "behind the pharmacy counter"
-      ]
-    },
-    "Harvey Oak Supply Store": {
-      "supply store": [
-        "supply store product shelf",
-        "behind the supply store counter",
-        "supply store counter"
-      ]
-    },
-    "Johnson Park": {
-      "park": [
-        "park garden"
-      ]
-    },
-    "The Rose and Crown Pub": {
-      "pub": [
-        "shelf",
+        "toilet",
+        "washing machine"
+      ],
+      "men's room 1": [
+        "bed"
+      ],
+      "men's room 2": [
+        "bed"
+      ],
+      "women's dormitory hallway": [
+        "pantry",
         "refrigerator",
-        "bar customer seating",
-        "behind the bar counter",
-        "kitchen sink",
-        "cooking area",
-        "microphone"
+        "storage cabinet"
+      ],
+      "women's study room": [
+        "dormitory study chair",
+        "bookshelf"
+      ],
+      "women's shower room": [
+        "showerhead",
+        "bathroom sink",
+        "toilet",
+        "washing machine"
+      ],
+      "women's room 1": [
+        "bed"
+      ],
+      "women's room 2": [
+        "bed"
       ]
     },
-    "Hobbs Cafe": {
-      "cafe": [
-        "refrigerator",
-        "cafe customer seating",
-        "cooking area",
-        "kitchen sink",
-        "behind the cafe counter",
-        "piano"
+    "playground": {
+      "playground": [
+        "activity spot on the playground"
       ]
     }
   }
