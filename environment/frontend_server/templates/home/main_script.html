@@ -159,7 +159,7 @@
 	  this.load.image("CuteRPG_Forest_C", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_C.png' %}");
 	  this.load.image("CuteRPG_Forest_D", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_D.png' %}");
 	  this.load.image("CuteRPG_Forest_E", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_E.png' %}");
-	  this.load.image("CuteRPG_Harbor_C", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Harbor_C' %}");
+	  this.load.image("CuteRPG_Harbor_C", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Harbor_C.png' %}");
 	  this.load.image("CuteRPG_Mountains_B", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Mountains_B.png' %}");
 	  this.load.image("CuteRPG_Village_B", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Village_B.png' %}");
 	  this.load.image("interiors_pt1", "{% static 'assets/high_school/visuals/map_assets/v1/interiors_pt1.png' %}");
@@ -222,14 +222,14 @@
 	  //       named things there. 
 	  let tileset_group_1 = [CuteRPG_Desert_B, CuteRPG_Desert_C, CuteRPG_Field_B, CuteRPG_Forest_B, CuteRPG_Forest_C,
 							 CuteRPG_Mountains_B, CuteRPG_Village_B,interiors_pt1, interiors_pt2, interiors_pt3, 
-							 interiors_pt4, walls];
+							 interiors_pt4, walls, CuteRPG_Harbor_C];
 	  const bottomGroundLayer = map.createLayer("Bottom Ground", tileset_group_1, 0, 0);
 	  const playGroundLayer = map.createLayer("Play Gruond", tileset_group_1, 0, 0);
 	  const exteriorGroundLayer = map.createLayer("Exterior Ground", tileset_group_1, 0, 0);
 	  const exteriorDecorationL1Layer = map.createLayer("Exterior Decoration L1", tileset_group_1, 0, 0);
 	  const exteriorDecorationL2Layer = map.createLayer("Exterior Decoration L2", tileset_group_1, 0, 0);
 	  const interiorGroundLayer = map.createLayer("Interior Ground", tileset_group_1, 0, 0);
-	  const wallLayer = map.createLayer("Wall", [CuteRPG_Field_C, walls], 0, 0);
+	  const wallLayer = map.createLayer("Wall", tileset_group_1, 0, 0); 
 	  const interiorFurnitureL1Layer = map.createLayer("Interior Furniture L1", tileset_group_1, 0, 0);
 	  const interiorFurnitureL2Layer = map.createLayer("Interior Furniture L2 ", tileset_group_1, 0, 0);
 	  const foregroundLayer = map.createLayer("Foreground", tileset_group_1, 0, 0);
