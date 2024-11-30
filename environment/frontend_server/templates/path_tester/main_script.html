@@ -50,7 +50,7 @@
 	let anims_direction;
 	let pre_anims_direction;
 
-	let curr_maze = "the_ville";
+	let curr_maze = "HighSchool";
 
 	// <tile_width> is the width of one individual tile (tiles are square)
 	let tile_width = 32;
@@ -104,25 +104,27 @@
 	  //       png file that contains the tileset. 
 	  //       Also IMPORTANT: when you create a tileset in Tiled, always be  
 	  //       sure to check the "embedded" option. 
-	  this.load.image("blocks_1", "{% static 'assets/the_ville/visuals/map_assets/blocks/blocks_1.png' %}");
-	  this.load.image("walls", "{% static 'assets/the_ville/visuals/map_assets/v1/Room_Builder_32x32.png' %}");
-	  this.load.image("interiors_pt1", "{% static 'assets/the_ville/visuals/map_assets/v1/interiors_pt1.png' %}");
-	  this.load.image("interiors_pt2", "{% static 'assets/the_ville/visuals/map_assets/v1/interiors_pt2.png' %}");
-	  this.load.image("interiors_pt3", "{% static 'assets/the_ville/visuals/map_assets/v1/interiors_pt3.png' %}");
-	  this.load.image("interiors_pt4", "{% static 'assets/the_ville/visuals/map_assets/v1/interiors_pt4.png' %}");
-	  this.load.image("interiors_pt5", "{% static 'assets/the_ville/visuals/map_assets/v1/interiors_pt5.png' %}");
-	  this.load.image("CuteRPG_Field_B", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Field_B.png' %}");
-	  this.load.image("CuteRPG_Field_C", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Field_C.png' %}");
-	  this.load.image("CuteRPG_Harbor_C", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Harbor_C.png' %}");
-	  this.load.image("CuteRPG_Village_B", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Village_B.png' %}");
-	  this.load.image("CuteRPG_Forest_B", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_B.png' %}");
-	  this.load.image("CuteRPG_Desert_C", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Desert_C.png' %}");
-	  this.load.image("CuteRPG_Mountains_B", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Mountains_B.png' %}");
-	  this.load.image("CuteRPG_Desert_B", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Desert_B.png' %}");
-	  this.load.image("CuteRPG_Forest_C", "{% static 'assets/the_ville/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_C.png' %}");
-
-	  // Joon: This is the export json file you get from Tiled. 
-	  this.load.tilemapTiledJSON("map", "{% static 'assets/the_ville/visuals/the_ville_jan7.json' %}");
+	  this.load.image("blocks_1", "{% static 'assets/high_school/visuals/map_assets/blocks/blocks_1.png' %}");
+	  this.load.image("blocks_2", "{% static 'assets/high_school/visuals/map_assets/blocks/blocks_2.png' %}");
+	  this.load.image("blocks_3", "{% static 'assets/high_school/visuals/map_assets/blocks/blocks_3.png' %}");
+	  this.load.image("CuteRPG_Desert_B", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Desert_B.png' %}");
+	  this.load.image("CuteRPG_Desert_C", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Desert_C.png' %}");
+	  this.load.image("CuteRPG_Field_B", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Field_B.png' %}");
+	  this.load.image("CuteRPG_Forest_B", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_B.png' %}");
+	  this.load.image("CuteRPG_Forest_C", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_C.png' %}");
+	  this.load.image("CuteRPG_Forest_D", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_D.png' %}");
+	  this.load.image("CuteRPG_Forest_E", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Forest_E.png' %}");
+	  this.load.image("CuteRPG_Harbor_C", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Harbor_C' %}");
+	  this.load.image("CuteRPG_Mountains_B", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Mountains_B.png' %}");
+	  this.load.image("CuteRPG_Village_B", "{% static 'assets/high_school/visuals/map_assets/cute_rpg_word_VXAce/tilesets/CuteRPG_Village_B.png' %}");
+	  this.load.image("interiors_pt1", "{% static 'assets/high_school/visuals/map_assets/v1/interiors_pt1.png' %}");
+	  this.load.image("interiors_pt2", "{% static 'assets/high_school/visuals/map_assets/v1/interiors_pt2.png' %}");
+	  this.load.image("interiors_pt3", "{% static 'assets/high_school/visuals/map_assets/v1/interiors_pt3.png' %}");
+	  this.load.image("interiors_pt4", "{% static 'assets/high_school/visuals/map_assets/v1/interiors_pt4.png' %}");
+	  this.load.image("interiors_pt5", "{% static 'assets/high_school/visuals/map_assets/v1/interiors_pt5.png' %}");
+	  this.load.image("walls", "{% static 'assets/high_school/visuals/map_assets/v1/Room_Builder_32x32.png' %}");
+ 
+	  this.load.tilemapTiledJSON("map", "{% static 'assets/high_school/visuals/Highschool.json' %}");
 
 	  // An atlas is a way to pack multiple images together into one texture. I'm 
 	  // using it to load all the player animations (walking left, walking right, 
@@ -149,22 +151,21 @@
 	  //       console.log(map) output. You need to make sure that the name 
 	  //       matches.
 	  const collisions = map.addTilesetImage("blocks", "blocks_1");
-	  const walls = map.addTilesetImage("Room_Builder_32x32", "walls");
+	  const CuteRPG_Desert_B = map.addTilesetImage("CuteRPG_Desert_B", "CuteRPG_Desert_B");
+	  const CuteRPG_Desert_C = map.addTilesetImage("CuteRPG_Desert_C", "CuteRPG_Desert_C");
+	  const CuteRPG_Field_B = map.addTilesetImage("CuteRPG_Field_B", "CuteRPG_Field_B");
+	  const CuteRPG_Forest_B = map.addTilesetImage("CuteRPG_Forest_B", "CuteRPG_Forest_B");
+	  const CuteRPG_Forest_C = map.addTilesetImage("CuteRPG_Forest_C", "CuteRPG_Forest_C");
+	  const CuteRPG_Forest_D = map.addTilesetImage("CuteRPG_Forest_D", "CuteRPG_Forest_D");
+	  const CuteRPG_Forest_E = map.addTilesetImage("CuteRPG_Forest_E", "CuteRPG_Forest_E");
+	  const CuteRPG_Harbor_C = map.addTilesetImage("CuteRPG_Harbor_C", "CuteRPG_Harbor_C");
+	  const CuteRPG_Mountains_B = map.addTilesetImage("CuteRPG_Mountains_B", "CuteRPG_Mountains_B");
+	  const CuteRPG_Village_B = map.addTilesetImage("CuteRPG_Village_B", "CuteRPG_Village_B");
 	  const interiors_pt1 = map.addTilesetImage("interiors_pt1", "interiors_pt1");
 	  const interiors_pt2 = map.addTilesetImage("interiors_pt2", "interiors_pt2");
 	  const interiors_pt3 = map.addTilesetImage("interiors_pt3", "interiors_pt3");
 	  const interiors_pt4 = map.addTilesetImage("interiors_pt4", "interiors_pt4");
-	  const interiors_pt5 = map.addTilesetImage("interiors_pt5", "interiors_pt5");
-	  const CuteRPG_Field_B = map.addTilesetImage("CuteRPG_Field_B", "CuteRPG_Field_B");
-	  const CuteRPG_Field_C = map.addTilesetImage("CuteRPG_Field_C", "CuteRPG_Field_C");
-	  const CuteRPG_Harbor_C = map.addTilesetImage("CuteRPG_Harbor_C", "CuteRPG_Harbor_C");
-	  const CuteRPG_Village_B = map.addTilesetImage("CuteRPG_Village_B", "CuteRPG_Village_B");
-	  const CuteRPG_Forest_B = map.addTilesetImage("CuteRPG_Forest_B", "CuteRPG_Forest_B");
-	  const CuteRPG_Desert_C = map.addTilesetImage("CuteRPG_Desert_C", "CuteRPG_Desert_C");
-	  const CuteRPG_Mountains_B = map.addTilesetImage("CuteRPG_Mountains_B", "CuteRPG_Mountains_B");
-	  const CuteRPG_Desert_B = map.addTilesetImage("CuteRPG_Desert_B", "CuteRPG_Desert_B");
-	  const CuteRPG_Forest_C = map.addTilesetImage("CuteRPG_Forest_C", "CuteRPG_Forest_C");
-
+	  const walls = map.addTilesetImage("Room_Builder_32x32", "walls");
 	  // The first parameter is the layer name (or index) taken from Tiled, the 
 	  // second parameter is the tileset you set above, and the final two 
 	  // parameters are the x, y coordinate. 
@@ -172,10 +173,11 @@
 	  //       literally is taken from our Tiled layer name. So to find out what
 	  //       they are; you actually need to open up tiled and see how you 
 	  //       named things there. 
-	  let tileset_group_1 = [CuteRPG_Field_B, CuteRPG_Field_C, CuteRPG_Harbor_C, CuteRPG_Village_B, 
-	  											 CuteRPG_Forest_B, CuteRPG_Desert_C, CuteRPG_Mountains_B, CuteRPG_Desert_B, CuteRPG_Forest_C,
-	  											 interiors_pt1, interiors_pt2, interiors_pt3, interiors_pt4, interiors_pt5, walls];
+	  let tileset_group_1 = [CuteRPG_Desert_B, CuteRPG_Desert_C, CuteRPG_Field_B, CuteRPG_Forest_B, CuteRPG_Forest_C,
+							 CuteRPG_Desert_D, CuteRPG_Desert_E, CuteRPG_Harvor_C, CuteRPG_Mountains_B, CuteRPG_Village_B,
+							 interiors_pt1, interiors_pt2, interiors_pt3, interiors_pt4, walls];
 	  const bottomGroundLayer = map.createLayer("Bottom Ground", tileset_group_1, 0, 0);
+	  const playGroundLayer = map.createLayer("Play Gruond", tileset_group_1, 0, 0);
 	  const exteriorGroundLayer = map.createLayer("Exterior Ground", tileset_group_1, 0, 0);
 	  const exteriorDecorationL1Layer = map.createLayer("Exterior Decoration L1", tileset_group_1, 0, 0);
 	  const exteriorDecorationL2Layer = map.createLayer("Exterior Decoration L2", tileset_group_1, 0, 0);
@@ -183,31 +185,12 @@
 	  const wallLayer = map.createLayer("Wall", [CuteRPG_Field_C, walls], 0, 0);
 	  const interiorFurnitureL1Layer = map.createLayer("Interior Furniture L1", tileset_group_1, 0, 0);
 	  const interiorFurnitureL2Layer = map.createLayer("Interior Furniture L2 ", tileset_group_1, 0, 0);
-	  const foregroundL1Layer = map.createLayer("Foreground L1", tileset_group_1, 0, 0);
-	  const foregroundL2Layer = map.createLayer("Foreground L2", tileset_group_1, 0, 0);
-	  foregroundL1Layer.setDepth(2);
-	  foregroundL2Layer.setDepth(2);
-
+	  const foregroundLayer = map.createLayer("Foreground", tileset_group_1, 0, 0);
 	  const collisionsLayer = map.createLayer("Collisions", collisions, 0, 0);
-	  // const groundLayer = map.createLayer("Ground", walls, 0, 0);
-	  // const indoorGroundLayer = map.createLayer("Indoor Ground", walls, 0, 0);
-	  // const wallsLayer = map.createLayer("Walls", walls, 0, 0);
-	  // const interiorsLayer = map.createLayer("Furnitures", interiors, 0, 0);
-	  // const builtInLayer = map.createLayer("Built-ins", interiors, 0, 0);
-	  // const appliancesLayer = map.createLayer("Appliances", interiors, 0, 0);
-	  // const foregroundLayer = map.createLayer("Foreground", interiors, 0, 0);
-
-	  // Joon : This is where you want to create a custom field for the tileset
-	  //        in Tiled. Take a look at this guy's tutorial: 
-	  //        https://www.youtube.com/watch?v=MR2CvWxOEsw&ab_channel=MattWilber
 	  collisionsLayer.setCollisionByProperty({ collide: true });
-	  // By default, everything gets depth sorted on the screen in the order we 
-	  // created things. Here, we want the "Above Player" layer to sit on top of 
-	  // the player, so we explicitly give it a depth. Higher depths will sit on 
-	  // top of lower depth objects.
-	  // Collisions layer should get a negative depth since we do not want to see
-	  // it. 
-	  collisionsLayer.setDepth(1);
+	
+	  collisionsLayer.setDepth(-1);
+	  foregroundLayer.setDepth(2);
 
 	  // *** SET UP CAMERA *** 
 	  // "player" is to be set as the center of mass for our "camera." We 

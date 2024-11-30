@@ -103,3 +103,4 @@ ENV/
 
 # Ignore Virtual Environment Folder
 myenv/
+environment/frontend_server/storage
