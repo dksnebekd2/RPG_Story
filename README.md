@@ -1,7 +1,7 @@
 # RPG_Story
 
 <p align="center" width="100%">
-<img src="cover.png" alt="RPG_Story 맵" style="width: 80%; min-width: 300px; display: block; margin: auto;">
+<img src="highschool.png" alt="RPG_Story 맵" style="width: 80%; min-width: 300px; display: block; margin: auto;">
 </p>
 
 ## 프로젝트 개요
